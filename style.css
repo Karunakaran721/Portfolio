@@ -1,0 +1,942 @@
+/* ----- POPPINS FONT Link ----- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap');
+
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    background-color:rgb(1, 1, 29);
+}
+.navBar 
+{
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    background-color: rgb(199, 196, 196);
+    display: flex;
+    font-weight: bolder;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 10px;
+}
+.subnav
+{
+    gap: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.subnav a
+{
+    color: blue;
+    border-bottom: 1px solid orangered;
+    font-size: 20px;
+    text-decoration: none;
+}
+.subnav a:hover
+{
+    transition: 0.3s;
+    cursor: pointer;
+    color: orangered;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+label
+{
+    display: none;
+}
+input
+{
+    display: none;
+}
+.profile_name
+{
+    font-size: 20px;
+    color: orangered;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    margin: 0px 0px 0px 0px;
+}
+.newbar #home
+{
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+}
+.newbar #about
+{
+    font-size: 20px;
+    width: 100%;
+    min-height: 100vh;
+    /* background-color: rgb(147, 21, 215); */
+}
+
+.newbar #education
+{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: space-around;
+}
+
+.newbar #skill
+{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    /* background-color: rgb(83, 187, 22); */
+}
+.project_card
+{
+    min-width: 100%;
+    font-size: 30px;
+    min-height: 100vh;
+    display: flex;
+    justify-content:space-around;
+    /* background-color:brown; */
+}
+.newbar #contact
+{
+    font-size: 30px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* background-color: rgb(184, 147, 121); */
+
+}
+   /* Home Content */
+    /* ----------Main---------- */
+.featured_box
+{
+    gap: 60px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+}
+.featured_name h3
+{
+    font-size: 25px;
+    color: orangered;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    margin: 10px 0px 0px 0px;
+}
+.featured_name .type_effect
+{
+    font-size: 22px;
+    overflow: hidden;
+    margin: 10px 0px 0px 30px;
+    padding: 1spx 11px;
+    white-space: nowrap;
+    color:rgb(6, 216, 216);
+    animation: slide 2s ease-in-out alternate infinite,
+    cursor 3s infinite ease-in-out alternate;
+}
+@keyframes slide
+{
+    from { width:0 }
+    to { width: 76%}
+}
+@keyframes cursor 
+{
+    from,to { border: 0.1px solid orangered; 
+    border-radius: 5px;}
+    
+}
+
+/* -----Button Style----- */
+.featured_text_btn
+{
+    width: 200px;
+    padding: 12px 12px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0px 0px 0px;
+    background-color: rgba(221, 221, 215,0.5);
+}
+.cv_btn
+{
+    border: none;
+    font-size: 20px;
+    padding: 5px 5px;
+    transition: 0.5s;
+    background-color:transparent;
+    box-shadow: inset 1px 1px 3px  rgb(184, 180, 180),
+                inset 5px 5px 12px black;
+}
+.cv_btn a
+{
+    color: black;
+    text-decoration: none;
+}
+.cv_btn:hover
+{
+    transition: 0.5s;
+    padding: 3px 3px;
+    color: transparent;
+    border: 2px solid orangered;
+    -webkit-text-stroke:0.6px rgb(253, 253, 253);
+     box-shadow:inset 0px 0px 0.3px #ecf0f3, 
+                5px 5px 12px black; 
+}
+.cv_btn:hover i
+{
+    color: orangered;
+}
+/* -----icons----- */
+.featured_text_btn i
+{
+    font-size: 17px;
+    color: white;
+    margin: 0px 0px 9px 4px;
+}
+
+
+/* -----user Image----- */
+.profile_image img
+{
+    width:  300px;
+    height: 300px;
+    padding: 5px;
+    border-radius: 50%;
+    border-style:double;
+    /* margin: 70px 150px 0px 0px; */
+    border-top:3px solid rgb(255, 19, 2);
+    border-left:3px solid rgb(255, 230, 2);
+    border-right:3px solid rgb(148, 3, 148);
+    border-bottom:3px solid rgb(79, 181, 221);
+}
+
+    /* -----Social Media link----- */
+.social_media
+{
+    gap: 25px;
+    display: flex;
+    transition: 0.4s;
+    margin: 30px 0px 0px -30px;
+}
+.social_media h4
+{
+    color: white;
+}
+.social_media .fa-brands
+{
+    transition: 0.5s;
+    padding: 3px 3px;
+    font-size: 20px;
+    border-radius: 4px;
+    color: orangered;
+    border: 1px solid orangered;
+    background-color: #ecf0f3;
+}
+.social_media .icon:hover
+{
+    transition: 0.4s;
+    padding: 5px 5px;
+    font-size: 20px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background-color: #0091ff;
+    border: 1px solid white;
+}
+
+ /* -------------Skills------------- */
+ .skill_content
+ {
+    width: 100%;
+    text-align: center;
+     gap: 10px;
+ }
+ .skill
+ {
+     color: orangered;
+     text-align: center;
+     letter-spacing: 3px;
+     font-size: 40px;
+     transition: 0.5s;
+     padding: 10px 20px;
+ }
+
+ .languages
+ {
+     display: flex;
+     flex-wrap: wrap;
+     position: relative;
+     top: 30px;
+     justify-content: space-around;
+ }
+ .languages h3
+ {
+     text-align: center;
+     color: orangered;
+     font-size: 30px;
+     background-color: rgba(255, 255, 255,0.2);
+     margin: 30px 0px 0px 0px;
+ }
+ /* -----logo Images----- */
+ .languages img
+    {
+     width: 100px;
+     height: 100px;
+     padding: 10px 10px;
+     border-radius: 50%;
+     text-align: center;
+     border: 2px solid white;
+     margin: 30px 30px 0px 10px;
+    }
+.framework img
+{
+    margin-top: 30px;
+}
+
+
+  /* -----Skill Card Design----- */
+  .ps
+  {
+     width: 390px;
+     height: 400px;
+     padding: 10px 20px;
+     border-radius: 7px;
+     border: 1px solid rgb(255, 255, 255);
+     background-color:transparent;
+     box-shadow:  1px 1px  7px #ecf0f3,
+                  inset 5px 5px 12px black;
+ }
+
+ .framework
+ {
+     width: 390px;
+     height: 350px;
+     border-radius: 7px;
+     border: 1px solid white;
+     background-color:transparent;
+     box-shadow:  0px 0px 7px #ecf0f3,
+                  inset 5px 5px 12px black
+ }
+ /* ----- Tools Img ----- */
+ .tools
+ {
+     width: 390px;
+    min-height: 320px;
+     border-radius: 7px;
+     border: 1px solid white;
+     background-color:transparent;
+     box-shadow:  0px 0px 7px #ecf0f3,
+                  inset 5px 5px 12px black
+ }
+ .tools h3
+ {
+     text-align: center;
+     color: orangered;
+     font-size: 30px;
+    /* position: relative; */
+    /* left: 50px;  */
+ }
+
+   /*---------------- Education -----------------*/
+.education
+{
+    width: 100%;
+    font-size: 16px;
+    min-height: 100vh;
+    color: white;
+    padding: 10px;
+}
+/*---------------- Education Heading -------------*/
+.edu{
+        position: relative;
+        top: 25px;
+        text-align: center;
+        font-size: 35px;
+        color: orangered;
+}
+/*--------------- Education Overall Div -------------*/
+.edu-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.box{
+    flex-wrap: wrap;
+}
+.edu-box1,.edu-box2
+{
+    padding: 10px;
+    flex-wrap: wrap;
+}
+.flex
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+/* graduate icon  */
+.edu-box3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    border:2px solid white;
+    max-width: 1px;
+}
+.edu-box3 i
+{
+    color: white;
+    font-size: 20px;
+    padding: 10px 10px;
+    border-radius: 50px;
+    background-color: orangered;
+}
+.edu-box1 div,.edu-box2 div{
+    height: 250px;
+}
+/*----------------- PG, UG, School Design -------------*/
+.it,.bca,.hsl{
+    width: 420px;
+    box-shadow: 1px 1px 3px 1px white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding:30px 20px;
+    font-weight: bold;
+    margin: 10px;
+}
+.year
+{
+    width: 160px;
+    padding: 8px 10px;
+    border-radius: 20px;
+    background-color: orangered;
+    color:white;
+}
+.box{
+    gap: 10px;
+}
+/*-------------------- Icon design ----------------*/
+.arrow{
+    font-size: 25px;
+    display: block;
+}
+.circle
+{
+    font-size: 50px;
+    display: block;
+}
+/* -------------------Projects--------------------- */
+#project
+{
+    text-align: center;
+    color: orangered;
+    font-size:40px;
+}
+.project_card
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  .flip-card-front h4,.btn-1
+  {
+    position: relative;
+    top: 30%;
+    font-size: 28px;
+  }
+  .click 
+  {
+    position: relative;
+    top: 35%;
+  }
+  .btn-1
+  {
+    padding: 2px 20px;
+    border:1.5px solid black;
+    background-color: transparent;
+    border-radius: 20px;
+  }
+  .btn-1 img
+  {
+    margin-top: 5px;
+  }
+  .flip-card-inner p
+  {
+    padding: 10px 20px;
+    font-size: 18px;
+    text-align: center;
+  }
+  .flip-card-back h5
+  {
+     font-size: 25px;
+     padding:15px 10px 10px 0px;
+  }
+  .flip-card-back .btn-2
+  {
+    padding: 5px 10px;
+    border-radius: 10px;
+    border:1.5px solid black;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front
+   {
+    background-image: url(./images/wall.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    border-radius: 30px;
+    border: 5px solid white;
+    outline: 2px solid orangered;
+    padding: 3px 3px;
+    color: rgb(255, 255, 255);
+  }
+  
+  .flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    border-radius: 20px;
+    transform: rotateY(180deg);
+  }
+
+  /* -----------Form--------- */
+  /* form Heading */
+.text-new
+{
+    font-size: 25px;
+    color: rgb(248, 103, 50);
+    text-align: center;
+    border-radius: 20px;
+}
+
+
+/* form cont */
+.address
+{
+    width: 40%;
+    height: fit-content;
+    padding: 10px 20px;
+    margin: 70px 0px 0px 0px;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 7px rgb(243, 241, 241);
+}
+.address-cont
+{
+    line-height: 70px;
+}
+
+input
+{
+    width: 100%;
+    padding: 20px 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 202, 233);
+    background-color: transparent;
+}
+
+/* course List */
+select
+{
+    width: 100%;
+    color: rgb(139, 137, 137);
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(1, 217, 255);
+    background-color: transparent;
+}
+.btn
+{
+    width: 100%;
+    padding: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-top: 15px;
+    outline:1px solid white;
+    border-radius: 20px 20px;
+    background-color: rgb(241, 91, 36);
+}
+.btn:hover
+{
+    outline-offset: 2px;
+}
+/*------------- About ----------*/
+.heading
+{
+    text-align: center;
+    color: orangered;
+    font-size: 40px;
+    margin: -90px 0px 0px 0px;
+}
+
+.person-detaill
+{
+    color: white;
+    width: 100%;
+    display: flex;
+    position: relative;
+    top: 50px;
+    line-height: 48px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+.kk
+{
+    line-height: 48px;
+}
+.personall-detail
+{
+    display: flex;
+    justify-content: space-around;
+
+}
+.personal-detail .person-heading 
+{
+    width:250px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.personall-detail .person-img img
+{
+    width: 170px;
+    height: 170px;
+    position: relative;
+    top: 70px;
+    padding: 4px 4px;
+    border-radius: 50%;
+    border: 2px solid orangered;
+}
+/* --------------Contact-------------- */
+.contact
+{
+    text-align: center;
+    color: orangered;
+    font-size: 50px;
+}
+.social_media h4
+{
+    font-size: 25px;
+    color: rgb(255, 255, 255) !important;
+}
+.profile_image img
+{
+    width: 200px;
+    height: 200px;
+}
+.social_media i
+{
+    font-size: 30px;
+}
+
+.featured_profile button
+{
+    margin: 20px 0px 0px 30px;
+    font-size: 20px;
+    padding: 5px 5px;
+    border: 2px solid orangered;
+    background-color: gray;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+.featured_profile button:hover
+{
+    transition: 0.5s;
+    background-color: rgb(5, 141, 141);
+}
+.featured_profile a
+{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.decl
+{
+    margin: 195px 0px 0px 0px;
+    width: 100%;
+    padding: 5px 5px;
+    text-align: center;
+    background-color: gray;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive screen */
+@media screen and (min-width:300px) and (max-width:750px)
+{
+    /* body
+    {
+        margin: 30px 0px 0px 20px;
+    } */
+    .subnav
+    {
+        width: 90%;
+        position: fixed;
+        top: 50px;
+        left: -100%;
+        height: 100vh;
+        padding: 50px 0px 0px;
+        flex-direction: column;
+    }
+
+    label
+    {
+        display: unset;
+        font-size: 20px;
+        margin: 10px 0px 0px 0px;
+    }
+    input:checked ~ .subnav
+    {
+        width:45%;
+        left: 10px;
+        top:15px;
+        padding: 2px;
+        color: white;
+        bottom: -5px;
+        transition: 0.5s;
+        border-radius: 20px;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+    input:checked ~ .subnav p
+    {
+        width: 60%;
+        padding: 5px 3px;
+        position: relative;
+        left: 20%;
+        text-align: center;
+        background-color: transparent;
+        box-shadow: inset 0px 0px 4px #ecf0f3,
+                    0px 0px 4px black;
+    }
+    /* -------Main------ */
+    .featured_box
+    {
+        position: relative;
+        top: 60px;
+        flex-wrap: wrap;
+    }
+    .featured_name
+    {
+        margin-left: 20px;
+    }
+    /* -----Button Style----- */
+.featured_text_btn
+{
+    position: relative;
+    top: -10px;
+    left: 55px;
+}
+    
+    /* -----user Image----- */
+    .profile_image
+    {
+        position: relative;
+        top: -50px;
+    }
+    .profile_image img
+    {
+        width:  200px;
+        height: 200px;
+        position: relative;
+        left: 40px;
+    }
+    .social_media
+    {
+        position: relative;
+        top: -90px;        
+    }
+    .social_media h4
+    {
+        position: relative;
+        left: 20px;
+        /* padding: 0px 10px; */
+        font-size: 23px;
+        color: black;
+    }
+    /* --------Skill Card ------- */
+    .skill_content h2
+    {
+        margin-top: 130px;
+    }
+
+    .languages
+    {
+        gap: 20px;
+    }
+    .languages h3
+    {
+        margin-top: 10px;
+        font: 10px;
+    }
+    .ps,.framework,.tools
+    {
+        width: 85%;
+    }
+   
+    .ps img,.tools img
+    {
+        width: 90px;
+        height: 90px;
+        margin: 37px 20px 20px 0px;
+    }
+
+
+    /*----------------------- Education Design -------------------*/
+    .edu-box{
+        width: 100%;
+        /* margin: 10px 0px 0px 40px; */
+    }
+    .edu
+    {
+        margin: 20px 0px 0px 0px;
+    }
+    .edu-box2,.edu-box1{
+        width: 100%;
+        padding: 10px;
+    }
+    .edu-box1 .empty{
+        height:50px;
+    }
+    .edu-box2 .empty{
+        height: 0px;
+    }
+    .edu-box3{
+        display: none;
+    }
+    .arrow,.circle{
+        visibility: hidden;
+    }
+    .it,.bca,.hsl {
+        width:auto;
+        height: 220px;
+        padding: 10px;
+    }
+    /* ------------Project CArd----------- */
+    .project_card
+    {
+    width: 90%;
+    gap: 30px;
+    margin: 10px 0px 0px 0px;
+   }
+   #project
+   {
+    margin: 40px 0px 0px 0px;
+   }
+   
+    /*--------------- Personal Details ---------------*/
+    .detail-heading
+    {
+        width: 250px;
+        font-weight: bold;
+        line-height: 10px;
+    }
+    
+    .personal-detail
+    {
+        width: 400px;
+        display: flex;
+        padding: 10px;
+    }
+    .person-img img
+    {
+        width: 200px ;
+        height: 200pxs;
+    }
+    /* ------Contact----- */
+    .contact
+    {
+        margin-top: 20px;
+    }
+    .featured_profile button
+{
+    margin-top: -10px;
+}
+    .profile_image,.social_media
+{
+    margin-top:70px;
+}
+   /* --------------About------------ */
+   .about
+   {
+      position: relative;
+      top: 60px;
+      
+   }
+   .personall-detail
+   {
+        flex-direction: column;
+   }
+   .person-detaill
+   {
+        font-size: 15px;
+   }
+   .person-img
+   {
+     position: relative;
+     left: 50px;
+   }
+   .kkk
+   {
+    line-height: 47px;
+   }
+   .kk
+   {
+    line-height: 39px;
+   }
+}
